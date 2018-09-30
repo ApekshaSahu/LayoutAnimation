@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LayoutAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="109" translatesAutoresizingMaskIntoConstraints="NO" id="sVt-yp-W6R">
+                                <rect key="frame" x="-331" y="-2" width="1000" height="669"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-u4-FpX" customClass="UIButtonX" customModule="LayoutAnimation" customModuleProvider="target">
+                                <rect key="frame" x="179" y="553" width="512" height="54"/>
+                                <state key="normal" image="iu-12"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                                        <real key="value" value="-3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animateFrom">
+                                        <integer key="value" value="-4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJc-w8-nou"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsT-or-dEF">
+                                <rect key="frame" x="317" y="100" width="49" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quq-QJ-ct6">
+                                <rect key="frame" x="223" y="161" width="145" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="iu-13" translatesAutoresizingMaskIntoConstraints="NO" id="jAA-sI-Cg5" customClass="UITextFieldX" customModule="LayoutAnimation" customModuleProvider="target">
+                                <rect key="frame" x="160" y="540" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="N6h-57-kJl"/>
+                                    <constraint firstAttribute="height" constant="80" id="n5i-aY-I1h"/>
+                                </constraints>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="iu-14"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lJh-u4-FpX" firstAttribute="bottom" secondItem="jAA-sI-Cg5" secondAttribute="bottom" constant="-13" id="LD3-tk-2YE"/>
+                            <constraint firstItem="lJh-u4-FpX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="533" id="LDR-oF-PdH"/>
+                            <constraint firstItem="lJh-u4-FpX" firstAttribute="centerX" secondItem="jAA-sI-Cg5" secondAttribute="centerX" constant="234.5" id="LaL-aE-eVF"/>
+                            <constraint firstItem="DsT-or-dEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Loi-gB-RlJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lJh-u4-FpX" secondAttribute="bottom" constant="60" id="UsK-gF-hUe"/>
+                            <constraint firstItem="DsT-or-dEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="317" id="ZrE-Kc-DM2"/>
+                            <constraint firstItem="quq-QJ-ct6" firstAttribute="top" secondItem="DsT-or-dEF" secondAttribute="bottom" constant="26" id="aOi-jd-Akk"/>
+                            <constraint firstItem="lJh-u4-FpX" firstAttribute="trailing" secondItem="jAA-sI-Cg5" secondAttribute="trailing" constant="451" id="hj0-6z-eVv"/>
+                            <constraint firstItem="lJh-u4-FpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="179" id="oMn-2z-bAK"/>
+                            <constraint firstItem="sVt-yp-W6R" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pGi-fW-eGe"/>
+                            <constraint firstItem="sVt-yp-W6R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-331" id="soS-dC-48V"/>
+                            <constraint firstItem="quq-QJ-ct6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="223" id="tUn-1E-eyj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldWidthConstraints" destination="N6h-57-kJl" id="9Rx-9Z-eJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="109" width="1000" height="669"/>
+        <image name="iu-12" width="512" height="512"/>
+        <image name="iu-13" width="512" height="512"/>
+        <image name="iu-14" width="297" height="298"/>
+    </resources>
+</document>
